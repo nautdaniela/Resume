@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]>-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="description" content="Name of your web site">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Know | Home</title>
+
+    <script type="text/javascript">
+        function ceas() {
+            var Digital = new Date()
+            var hours = Digital.getHours()     // Preia ora
+            var minutes = Digital.getMinutes()     // Preia minutele
+            var seconds = Digital.getSeconds()     // Preia secundele
+            var dn = "AM"
+            // Stabileste afisarea AM (Ante Meridian) sau PM (Post Meridian)
+            if (hours > 12) {
+                dn = "PM"
+                hours = hours - 12
+            }
+            if (hours == 0)
+                hours = 12
+            if (minutes <= 9)
+                minutes = "0" + minutes
+            if (seconds <= 9)
+                seconds = "0" + seconds
+
+            // Aici poti schimba marimea si tipul fontului
+            // Creaza si afiseaza elementele HTML in eticheta <div>
+            myclock = "<font size='4' face='Arial' ><b><font size='3'>Ora curenta : </font><br>" + hours + ":" + minutes + ":"
+                + seconds + " " + dn + "</b></font>"
+
+            document.getElementById("ceas2").innerHTML = myclock
+            setTimeout("ceas()", 1000)     // Executa functia ceas() la fiecare secunda
+        }
+        window.onload = ceas;     // Executa functia ceas() la incarcarea scriptului
+
+    </script>
+
+    <!-- STYLES -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+    <link rel="stylesheet" type="text/css" href="css/dark.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--<link rel="stylesheet" type="text/css" href="css/dark.css" />-->
+    <!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+    <!-- /STYLES -->
+</head>
+
+<body class="dark">
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader_line"></div>
+    </div>
+    <!-- /PRELOADER -->
+
+    <!-- WRAPPER ALL -->
+    <div class="know_tm_all_wrap" data-magic-cursor="show">
+        <!-- If you want disable magic cursor change value to "hide" -->
+
+        <!-- MODALBOX -->
+        <div class="know_tm_modalbox">
+            <div class="box_inner">
+                <div class="close">
+                    <a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
+                </div>
+                <div class="description_wrap"></div>
+            </div>
+        </div>
+        <!-- /MODALBOX -->
+
+        <!-- TOPBAR -->
+        <div class="know_tm_topbar">
+            <div class="container">
+                <div class="topbar_inner">
+                    <div class="logo">
+                        <a href="#"><img src="" alt="" /></a>
+                    </div>
+                    <div class="right">
+                        <div class="know_tm_button fixedVersion">
+                            <a href="img/cv/1.jpg" download target="_blank">Download CV</a>
+                        </div>
+                    </div>
+
+                    <!-- AUTHOR INFO FOR MOBILE -->
+                    <div class="know_tm_author_info">
+                        <div class="info_inner">
+                            <div class="info">
+                                <h3>Năut Nicoleta Daniela</h3>
+                                <span>Computer Scientist</span>
+                            </div>
+                            <div class="avatar">
+                                <div class="main" data-img-url="img/hero/4.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /AUTHOR INFO FOR MOBILE -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /TOPBAR -->
+
+        <!-- BACKGROUND -->
+        <div class="know_tm_fixed_background movingEffect" data-img-url="img/hero/5.jpg"></div>
+        <!-- /BACKGROUND -->
+
+        <!-- CONTENT -->
+        <div class="know_tm_fixed_content">
+            <div class="container">
+                <div class="fixed_content_inner">
+
+                    <div class="content_left">
+                        <!-- MENUBAR -->
+                        <div class="menubar">
+                            <ul>
+                                <li class="active">
+                                    <img class="svg" src="img/svg/archive.svg" alt="" />
+                                    <span>About Me</span>
+                                    <a class="know_tm_full_link" href="#about"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/contacs.svg" alt="" />
+                                    <span>Resume</span>
+                                    <a class="know_tm_full_link" href="#resume"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/briefcase.svg" alt="" />
+                                    <span>Portfolio</span>
+                                    <a class="know_tm_full_link" href="#portfolio"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/gear.svg" alt="" />
+                                    <span>Service</span>
+                                    <a class="know_tm_full_link" href="#service"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/message.svg" alt="" />
+                                    <span>Testimonial</span>
+                                    <a class="know_tm_full_link" href="#testimonials"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/writing.svg" alt="" />
+                                    <span>Blog</span>
+                                    <a class="know_tm_full_link" href="#news"></a>
+                                </li>
+                                <li>
+                                    <img class="svg" src="img/svg/letter.svg" alt="" />
+                                    <span>Contact</span>
+                                    <a class="know_tm_full_link" href="#contact"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /MENUBAR -->
+
+                        <!-- INFOBAR -->
+                        <div class="infobar">
+                            <div class="bar_in">
+                                <div class="image">
+                                    <img src="img/thumbs/10-9.jpg" alt="" />
+                                    <div class="main" data-img-url="img/hero/4.jpg"></div>
+                                </div>
+                                <div class="extra">
+                                    <div class="short">
+                                        <h3>Năut Nicoleta Daniela</h3>
+                                        <span>Computer Scientist</span>
+                                    </div>
+                                    <div class="social">
+                                        <ul>
+                                            <li>
+                                                <a href="https://github.com/nautdaniela" target="_blank">
+                                                    <img class="icons"
+                                                        src="https://img.icons8.com/tiny-color/64/github.png"
+                                                        alt="github" title="github icon" width="30px" height="30px">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/daniela-naut-87a9a510a/"
+                                                    target="_blank">
+                                                    <img class="icons"
+                                                        src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                                                        alt="linkedin" title="linkedin icon" width="30px" height="30px">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.facebook.com/daniela.naut.86" target="_blank">
+                                                    <img class="icons"
+                                                        src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                                                        alt="facebook" title="facebook icon" width="30px" height="30px">
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /INFOBAR -->
+                    </div>
+
+                    <div class="content_right">
+                        <!-- MAINBAR -->
+                        <div class="mainbar">
+
+                            <!-- ABOUT -->
+                            <div id="about" class="know_tm_main_section active">
+                                <div class="know_tm_about">
+                                    <div class="left">
+                                        <div class="left_inner">
+                                            <div class="image">
+                                                <img src="img/thumbs/35-44.jpg" alt="" />
+                                                <div class="main" data-img-url="img/about/1.jpg"></div>
+                                            </div>
+                                            <div class="details">
+                                                <ul>
+                                                    <li>
+                                                        <h3>Name</h3>
+                                                        <span>Năut Nicoleta Daniela</span>
+                                                    </li>
+                                                    <li>
+                                                        <h3>Birthday</h3>
+                                                        <span>November 23, 1986</span>
+                                                    </li>
+                                                    <li>
+                                                        <h3>Mail</h3>
+                                                        <span><a href=""
+                                                                class="mailyahoo">nautnicoletadaniela@yahoo.com</a></span>
+                                                    </li>
+                                                    <li>
+                                                        <h3>Phone</h3>
+                                                        <span>+40 747 388 622</span>
+                                                    </li>
+                                                    <li>
+                                                        <h3>Nationality</h3>
+                                                        <span>Romanian</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="know_tm_main_title">
+                                            <span>About Me</spanstyle=>
+                                        </div>
+                                        <div class="text">
+                                            <p style="text-indent:40px">I am passionate about technology - web
+                                                development with very good project management skills, team spirit,
+                                                analytics, stress resistance and easily adaptable to working conditions.
+                                            </p>
+                                            <p style="text-indent:40px">Through the dedication and ambition I manage
+                                                successfully complete all the tasks I received. I have acquired the
+                                                skills and knowledge necessary to make your project a success.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /ABOUT -->
+
+                            <!-- RESUME -->
+                            <div id="resume" class="know_tm_main_section">
+                                <div class="know_tm_resume">
+                                    <div class="know_tm_main_title" href="#resume">
+                                        <span>Resume</span>
+                                        <h3>Combination of Skill &amp; Experience</h3>
+                                    </div>
+                                    <div class="resume_inner">
+                                        <div class="left">
+                                            <div class="info_list">
+                                                <div class="know_tm_resume_title">
+                                                    <h3>Education</h3>
+                                                    <span class="shape"></span>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Computer technologies in computational
+                                                                        optimization ~ master is degree</h3>
+                                                                    <span>Transilvania University of Brasov
+                                                                        Romania</span>
+                                                                </div>
+                                                                <div class="year">
+                                                                    <span>2008 - 2010</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Computer Science ~ bachelor is degree</h3>
+                                                                    <span>1 Decembrie 1918 <br>University of Alba Iulia
+                                                                        Romania</span>
+                                                                </div>
+                                                                <div class="year">
+                                                                    <span>2005 - 2008</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>The goal of cognitive science is to understand the
+                                                                    principles of intelligence with the hope that this
+                                                                    will lead to better comprehension.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="info_list">
+                                                <div class="know_tm_resume_title">
+                                                    <h3>Experience</h3>
+                                                    <span class="shape"></span>
+                                                </div>
+                                                <ul>
+                                                         <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3> Online Courses -     JavaScript - Web Development  -      Scoala Informala de IT</h3>
+                                                                    <div class="year yearRight">
+                                                                        <span> Oct 2022 - March 2023 </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>HTML CSS JavaScript React Bootstrap</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Courses - Explore the Web - WePixel </h3>
+                                                                    <div class="year yearRight">
+                                                                        <span>2 May 2022 - 27 May 2022 </span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Wordpress & Elementor</p>
+                                                                <p>https://daniela.g4.wepixel.ro/</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Courses ~ I.T. Factory </h3>
+                                                                    <div class="year yearRight">
+                                                                        <span>October 2021 - February 2022 </span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Introduction to programming Java and OOP</p>
+                                                                <p>FrontEnd - Introduction to Web Development -
+                                                                    JavaScript | HTML | CSS</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Warehouse - department Supply</h3>
+                                                                    <div class="year yearRight3">
+                                                                        <span>July 2021 - September 2021</span>
+                                                                    </div>
+                                                                    <span>SC BRIKSTON CONSTRUCTION SOLUTION SA</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Orders | - Good registration | </p>
+                                                                <p>Necessary Paper | - Evidence of Materials</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Computer Network Administrator</h3>
+                                                                    <div class="year yearRight3">
+                                                                        <span>January 2016 - July 2021 </span>
+                                                                    </div>
+                                                                    <span>SC BRIKSTON CONSTRUCTION SOLUTION SA</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Laptop or Computer ~ installation and configuration
+                                                                </p>
+                                                                <p>Computers administration and work with Wordpress</p>
+                                                                <p>Emails and install ERP software</p>
+                                                                <p>Printers and Webcams, IP scans and network situations
+                                                                </p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Junior Credit Officer</h3>
+                                                                    <div class="year yearRight3">
+                                                                        <span>November 2012 ~ April 2013</span>
+                                                                    </div>
+                                                                    <span>S.C. CETELEM IFN S.A.</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Selling financial products</p>
+                                                                <p>Advising Clients for consumer credit agreements.</p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Sales Assistant</h3>
+                                                                    <div class="year yearRight2">
+                                                                        <span>November 2010 ~ September 2011</span>
+                                                                    </div>
+                                                                    <span>S.C. VES S.A</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+                                                                <p>Collaboration with customers and sales team</p>
+                                                                <p>Attributions given by the direct boss ( Excel Tabel ,
+                                                                    emails, ERP orders)</p>
+                                                                <p>Partipation in inventory for products company</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="list_inner">
+                                                            <div class="short">
+                                                                <div class="job">
+                                                                    <h3>Economic official</h3>
+                                                                    <div class="year yearRight2">
+                                                                        <span>September 2009 ~ December 2009</span>
+                                                                    </div>
+                                                                    <span>S.C. ITALIA LA MASA S.R.L</span>
+                                                                </div>
+
+                                                            </div>
+                                                            <div class="text">
+
+                                                                <p>Managing all marketing and events</p>
+                                                                <p>Primary accounting and secretariat</p>
+                                                                <p>People Recruitment/Development</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="right">
+                                            <div class="skills_list">
+                                                <div class="know_tm_resume_title">
+                                                    <h3>Personal Skills</h3>
+                                                    <span class="shape"></span>
+                                                </div>
+                                                <div class="personal">
+                                                    <div class="dodo_progress">
+                                                        <div class="progress_inner" data-value="90">
+                                                            <span><span class="label">Time Management</span><span
+                                                                    class="number">90%</span></span>
+                                                            <div class="background">
+                                                                <div class="bar">
+                                                                    <div class="bar_in"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress_inner" data-value="70">
+                                                            <span><span class="label">Effeciency</span><span
+                                                                    class="number">70%</span></span>
+                                                            <div class="background">
+                                                                <div class="bar">
+                                                                    <div class="bar_in"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress_inner" data-value="80">
+                                                            <span><span class="label">Intigrity</span><span
+                                                                    class="number">80%</span></span>
+                                                            <div class="background">
+                                                                <div class="bar">
+                                                                    <div class="bar_in"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="skills_list">
+                                                <div class="know_tm_resume_title">
+                                                    <h3>Software Skills</h3>
+                                                    <span class="shape"></span>
+                                                </div>
+                                                <div class="software">
+                                                    <div class="circular_progress_bar">
+                                                        <ul>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.8"></div>
+                                                                    <div class="title">
+                                                                        <h3>HTML5 &amp; CSS  &amp; JavaScript  &amp; React</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                             <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.6"></div>
+                                                                    <div class="title">
+                                                                        <h3>JavaScript  &amp; React</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.75"></div>
+                                                                    <div class="title">
+                                                                        <h3>Microsoft Office 2019</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.9"></div>
+                                                                    <div class="title">
+                                                                        <h3>Windows 7, Windows 10</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.65"></div>
+                                                                    <div class="title">
+                                                                        <h3>Wordpress, My SQL, MS Access, Power BI</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.65"></div>
+                                                                    <div class="title">
+                                                                        <h3>Internet Explorer, Google Chrome, Mozzila
+                                                                            Firefox</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="list_inner">
+                                                                    <div class="myCircle" data-value="0.65"></div>
+                                                                    <div class="title">
+                                                                        <h3>Webcams software: Mobotix, Smart PSS, Use
+                                                                            UltraViewer, VNCViewer, TeamViewer</h3>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /RESUME -->
+
+                            <!-- PORTFOLIO -->
+                            <div id="portfolio" class="know_tm_main_section">
+                                <div class="know_tm_portfolio">
+                                    <div class="know_tm_main_title">
+                                        <span>Resume</span>
+                                        <h3>My works</h3>
+                                        <br>
+                                        <a href="https://github.com/nautdaniela"
+                                            id="linkgit">https://github.com/nautdaniela</a>
+
+                                    </div>
+                                    <div class="portfolio_filter">
+                                        <ul>
+                                            <li><a href="#" class="current" data-filter="*">All</a></li>
+                                            <li><a href="#" data-filter=".vimeo">Example1</a></li>
+                                            <li><a href="#" data-filter=".youtube">Haloween</a></li>
+                                            <li><a href="#" data-filter=".soundcloud">Example2CV</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="portfolio_list">
+                                        <ul class="gallery_zoom">
+                                            <li class="vimeo">
+                                                <div class="list_inner">
+                                                    <div class="image">
+                                                        <img src="img/portofolio/A4.png" alt="" />
+                                                        <div class="main" data-img-url="img/portofolio/A4.png"></div>
+                                                    </div>
+                                                    <div class="overlay"></div>
+                                                    <img class="svg" src="img/portofolio/A4.png" alt="" />
+                                                </div>
+                                            </li>
+                                            <li class="youtube">
+                                                <div class="list_inner">
+                                                    <div class="image">
+                                                        <img src="img/portofolio/A5.png" alt="" />
+                                                        <div class="main" data-img-url="img/portofolio/A5.png"></div>
+                                                    </div>
+                                                    <div class="overlay"></div>
+                                                    <img class="svg" src="img/portofolio/A5.png" alt="" />
+                                                </div>
+                                            </li>
+                                            <li class="soundcloud">
+                                                <div class="list_inner">
+                                                    <div class="image">
+                                                        <img src="img/portofolio/A2.png" alt="" />
+                                                        <div class="main" data-img-url="img/portofolio/A2.png"></div>
+                                                    </div>
+                                                    <div class="overlay"></div>
+                                                    <img class="svg" src="img/portofolio/A2.png" alt="" />
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /PORTFOLIO -->
+
+                            <!-- SERVICES -->
+                            <div id="service" class="know_tm_main_section">
+                                <div class="know_tm_services">
+                                    <div class="know_tm_main_title">
+                                        <span>Service</span>
+                                        <h3>Never compromise with quality</h3>
+                                    </div>
+                                    <div class="service_list">
+                                        <ul>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <span class="icon"><img class="svg" src="img/svg/archive.svg"
+                                                            alt="" /></span>
+                                                    <h3 class="title">Diplomas</h3>
+                                                    <p class="text">Development is the building and maintenance...</p>
+                                                    <a class="know_tm_full_link" href="#"></a>
+                                                    <div class="hidden_content">
+                                                        <div class="service_informations">
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d4.jpg" alt="" width="10px"
+                                                                    height="1100px" />
+                                                                <div class="main" data-img-url="img/news/cert/d4.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d3.jpg" alt="" width="10px"
+                                                                    height="400px" />
+                                                                <div class="main" data-img-url="img/news/cert/d3.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d7.jpg" alt="" width="10px"
+                                                                    height="900px" />
+                                                                <div class="main" data-img-url="img/news/cert/d7.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d8.jpg" alt="" width="10px"
+                                                                    height="400px" />
+                                                                <div class="main" data-img-url="img/news/cert/d8.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d6.jpg" alt="" width="10px"
+                                                                    height="900px" />
+                                                                <div class="main" data-img-url="img/news/cert/d6.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="image">
+                                                                <img src="img/news/cert/d1.jpg" alt="" width="10px"
+                                                                    height="900px" />
+                                                                <div class="main" data-img-url="img/news/cert/d1.jpg">
+                                                                </div>
+                                                            </div>
+                                                            <div class="description">
+                                                                <p>Certificates and diplomas obtained during personal
+                                                                    development in the IT area.
+                                                                    It is important to develop yourself and do what you
+                                                                    like. </p>
+                                                                <p>All this is for my improvement and to fulfill my
+                                                                    dream of being a Web developer and being part of a
+                                                                    growing IT community.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <span class="icon"><img class="svg" src="img/svg/briefcase.svg"
+                                                            alt="" /></span>
+                                                    <h3 class="title">Optimization</h3>
+                                                    <p class="text">The result is the key to success...</p>
+                                                    <a class="know_tm_full_link" href="#"></a>
+                                                    <div class="hidden_content">
+                                                        <div class="service_informations">
+                                                            <div class="description">
+                                                                <p>To Whom It May Concern:</p>
+                                                                <p>Naut Nicoleta Daniela took part in our Frontend
+                                                                    Development course and was one of our
+                                                                    better students.
+                                                                    The first module covered was "Introduction to Web
+                                                                    Development":</p>
+                                                                <ul>
+                                                                    <li>HTML Structure, accessibility, forms and inputs.
+                                                                    </li>
+                                                                    <li>CSS syntax, rules, selectors, box model,
+                                                                        flexbox, media queries.</li>
+                                                                    <li>Bootstrap</li>
+                                                                    <li>Git + Github Pages</li>
+                                                                </ul><br>
+                                                                <p>
+                                                                    In the second module we covered:</p>
+                                                                <ul>
+                                                                    <li>JavaScript: types, array, date, objects,
+                                                                        statements, loops, functions</li>
+                                                                    <li>DOM</li>
+                                                                    <li>Object oriented programming.</li>
+                                                                </ul><br>
+                                                                <p>
+                                                                    The third module covered:</p>
+                                                                <ul>
+                                                                    <li>XHR Requests</li> and
+                                                                    <li>A final project consisting in a fully functional
+                                                                        website.</li>
+                                                                </ul>
+                                                                <p> After finishing our practical course we feel that
+                                                                    Nicoleta has a solid foundation on which
+                                                                    to add new information that can grow her expertise.
+                                                                    Nicoleta is a quick learner and did not hesitate to
+                                                                    expand her knowledge by embracing
+                                                                    new technologies. Nicoleta possesses good analytical
+                                                                    skills and overall, she is a
+                                                                    professional, curious, and passionate software
+                                                                    engineer.</p>
+                                                                <p>
+                                                                    In conclusion, we think Nicoleta can be a valuable
+                                                                    employee in your company for a
+                                                                    position as Junior Frontend Developer. We fully
+                                                                    recommend her and wish her the very
+                                                                    best for the future. </p>
+                                                                <p>Sincerely,
+                                                                    Andy Sînpetrean
+                                                                    Co-founder ITF</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /SERVICES -->
+
+                            <!-- TESTIMONIALS -->
+                            <div id="testimonials" class="know_tm_main_section">
+                                <div class="know_tm_testimonials">
+                                    <div class="know_tm_main_title">
+                                        <span>Testimonials</span>
+                                        <h3>What people say about me</h3>
+                                    </div>
+                                    <div class="testimonials_list owl-carousel owl-theme">
+                                        <div class="list_inner">
+                                            <div class="in">
+                                                <div class="text">
+                                                    <p>Daniela is a quick learner and did not hesitate to expand her
+                                                        knowledge by embracing new technologies. Daniela possesses good
+                                                        analytical skills and overall, she is a professional, curious,
+                                                        and passionate
+                                                        software engineer. In conclusion, we think Daniela can be a
+                                                        valuable employee in your company for a position as Junior Java
+                                                        Developer. We fully recommend her and wish her the very best for
+                                                        the
+                                                        future.
+                                                </div>
+                                                <div class="details">
+                                                    <div class="left">
+                                                        <div class="avatar">
+                                                            <div class="main" data-img-url="img/testimonials/1.jpg">
+                                                            </div>
+                                                        </div>
+                                                        <div class="info">
+                                                            <h3>Andy Sinpetrean</h3>
+                                                            <span>Co-founder ITF</span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /TESTIMONIALS -->
+
+                            <!-- NEWS -->
+                            <div id="news" class="know_tm_main_section">
+                                <div class="know_tm_news">
+                                    <div class="know_tm_main_title">
+                                        <span>Blog</span>
+                                        <h3>Latest tips, tricks &amp; Updates</h3>
+                                    </div>
+                                    <div class="news_list">
+                                        <ul>
+                                            <li>
+                                                <div class="list_inner">
+                                                    <div class="image">
+                                                        <img src="img/thumbs/37-27.jpg" alt="" />
+                                                        <div class="main" data-img-url="img/news/1.jpg"></div>
+                                                        <a class="know_tm_full_link" href="#"></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <span class="category"><a href="#">Web Design</a></span>
+                                                        <h3 class="title"><a href="#">How to create a website using
+                                                                WordPress</a></h3>
+                                                    </div>
+
+                                                    <div class="hidden_content">
+                                                        <div class="news_informations">
+                                                            <div class="text">
+                                                                <p>Know is a leading web design agency with an
+                                                                    award-winning design team that creates innovative,
+                                                                    effective websites that capture your brand, improve
+                                                                    your conversion rates, and maximize
+                                                                    your revenue to help grow your business and achieve
+                                                                    your goals.</p>
+                                                                <p>In today is digital world, your website is the first
+                                                                    interaction consumers have with your business.
+                                                                    That's why almost 95 percent of a user is first
+                                                                    impression relates to web design. It is
+                                                                    also why web design services can have an immense
+                                                                    impact on your company is bottom line.</p>
+                                                                <p>That is why more companies are not only reevaluating
+                                                                    their website is design but also partnering with
+                                                                    Kura, the web design agency that is driven more than
+                                                                    $2.4 billion in revenue for its
+                                                                    clients. With over 50 web design awards under our
+                                                                    belt, we're confident we can design a custom website
+                                                                    that drives sales for your unique business.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="list_inner">
+                                                    <div class="image">
+                                                        <img src="img/thumbs/37-27.jpg" alt="" />
+                                                        <div class="main" data-img-url="img/news/3.jpg"></div>
+                                                        <a class="know_tm_full_link" href="#"></a>
+                                                    </div>
+                                                    <div class="details">
+                                                        <span class="category"><a href="#">UI Design</a></span>
+                                                        <h3 class="title"><a href="#">How to handle errors in React
+                                                                Javascript</a></h3>
+                                                    </div>
+
+                                                    <div class="hidden_content">
+                                                        <div class="news_informations">
+                                                            <div class="text">
+                                                                <p>Know is a leading web design agency with an
+                                                                    award-winning design team that creates innovative,
+                                                                    effective websites that capture your brand, improve
+                                                                    your conversion rates, and maximize
+                                                                    your revenue to help grow your business and achieve
+                                                                    your goals.</p>
+                                                                <p>In today is digital world, your website is the first
+                                                                    interaction consumers have with your business.
+                                                                    That's why almost 95 percent of a user is first
+                                                                    impression relates to web design. It is
+                                                                    also why web design services can have an immense
+                                                                    impact on your company is bottom line.</p>
+                                                                <p>That is why more companies are not only reevaluating
+                                                                    their website is design but also partnering with
+                                                                    Kura, the web design agency that is driven more than
+                                                                    $2.4 billion in revenue for its
+                                                                    clients. With over 50 web design awards under our
+                                                                    belt, we're confident we can design a custom website
+                                                                    that drives sales for your unique business.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                    <div>
+                                        <h5>Tips and triks</h5>
+                                        <div id="ceas2"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <!-- /NEWS -->
+
+                            <!-- CONTACT -->
+                            <div id="contact" class="know_tm_main_section">
+                                <div class="know_tm_contact">
+                                    <div class="know_tm_main_title">
+                                        <span>Contact Me</span>
+                                        <h3>Contact me to get your work done</h3>
+                                    </div>
+                                    <div class="wrapper">
+                                        <div class="left">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_inner">
+                                                        <span class="icon"><img class="svg" src="img/svg/smartphone.svg"
+                                                                alt="" /></span>
+                                                        <div class="short">
+                                                            <h3>Call Me</h3>
+                                                            <span>+40 747 388 622</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_inner">
+                                                        <span class="icon"><img class="svg" src="img/svg/letter.svg"
+                                                                alt="" /></span>
+                                                        <div class="short">
+                                                            <h3>Email Us</h3>
+                                                            <span><a href="#"><span class="__cf_email__"
+                                                                        data-cfemail="ec8489808083ac858782839bc28f8381">nautnicoletadaniela@yahoo.com</span></a>
+                                                            </span>
+                                                            <span><a href="https://nautdaniela.github.io/"
+                                                                    target="_blank">https://nautdaniela.github.io/</span></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_inner">
+                                                        <span class="icon"><img class="svg"
+                                                                src="img/svg/placeholder.svg" alt="" /></span>
+                                                        <div class="short">
+                                                            <h3>Address</h3>
+                                                            <span>Sighisoara, Romania</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /CONTACT -->
+
+                        </div>
+                        <!-- /MAINBAR -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /CONTENT -->
+
+
+
+
+
+
+
+        <!-- COPYRIGHT -->
+        <div class="know_tm_copyright fixed">
+            <div class="container">
+                <div class="inner">
+                    <div class="left">
+                        <p>Designed with love &copy; <a href="" target="_blank">Daniela Năut</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /COPYRIGHT -->
+
+        <!-- MAGIC CURSOR -->
+        <div class="mouse-cursor cursor-outer"></div>
+        <div class="mouse-cursor cursor-inner"></div>
+        <!-- /MAGIC CURSOR -->
+
+    </div>
+    <!-- / WRAPPER ALL -->
+
+    <!-- SCRIPTS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
+    <script src="js/plugins.js"></script>
+    <script src="js/init.js"></script>
+    <!-- /SCRIPTS -->
+
+</body>
+
+</html>
